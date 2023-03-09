@@ -1,0 +1,269 @@
+.home {
+    .header-top {
+        background: url(../../assets/img/bg-home.png) center/cover;
+        height: 90vh;
+
+        @media screen and (max-width: 1065px) {  
+            background: url(../../assets/img/responsive-home/bg-home-1065.png);       
+       }
+        @media screen and (max-width: 1045px) {  
+            background: url(../../assets/img/responsive-home/bg-home-1045.png);       
+       }
+        @media screen and (max-width: 1025px) {  
+            background: url(../../assets/img/responsive-home/bg-home-responsive.png) center/cover;       
+       }
+        @media screen and (max-width: 850px) {  
+            background: url(../../assets/img/responsive-home/bg-home-responsive-850.png) center/cover;       
+       }
+        @media screen and (max-width: 720px) {  
+            background: url(../../assets/img/responsive-home/bg-home-responsive-720.png) center/cover;       
+       }
+        @media screen and (max-width: 600px) {  
+            background: url(../../assets/img/responsive-home/bg-home-responsive-600.png) center/cover;       
+       }
+        @media screen and (max-width: 510px) {  
+            background: url(../../assets/img/responsive-home/bg-home-responsive-510.png) center/cover;       
+       }
+        @media screen and (max-width: 450px) {  
+            background: url(../../assets/img/responsive-home/bg-home-responsive-450.png) center/cover;       
+       }
+
+        h1 {
+            color: $white;
+            width: 50%;
+            font-size: 3rem;
+            margin: 0 auto;
+
+            @media screen and (max-width: 850px) {  
+                font-size: 2.5rem;        
+           }
+            @media screen and (max-width: 600px) {  
+                width: 80%;      
+           }
+            @media screen and (max-width: 380px) {  
+                font-size: 2rem;     
+           }
+        }
+    }
+
+    .header-bottom {
+        @include center;
+        flex-direction: column;
+        height: 500px;
+
+        h2 {
+            text-align: center;
+            font-size: 3.5rem;
+            letter-spacing: 1.5px;
+            width: 60%;
+            margin-bottom: 30px;
+
+            @media screen and (max-width:835px) {
+                font-size: 3rem;
+            }
+            @media screen and (max-width:570px) {
+                font-size: 2.5rem;
+                width: 80%;
+            }
+            @media screen and (max-width:440px) {
+                font-size: 2rem;
+                width: 95%;
+
+            }
+            
+        }
+        p{
+            text-align: center;
+            font-size: .9rem;
+            width: 55%;
+
+            @media screen and (max-width:570px) {
+                width: 80%;
+            }
+            @media screen and (max-width:440px) {
+                width: 90%;
+                font-size: .8rem;
+            }
+        }
+        button {
+            margin: 50px 0 30px;
+        }
+    }
+    .main {
+        background: $color2;
+        @include center;
+        flex-direction: column;
+        color: $white;
+
+        h2 {
+            margin: 80px auto 40px;
+            font-size: 2.5rem;
+
+            @media screen and (max-width:590px) {
+                font-size: 2rem;
+                text-align: center;
+            }
+            
+        }
+
+        .container-pets {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 50px;
+            margin: 10px ;
+
+            @media screen and (max-width:1190px) {
+                grid-gap: 20px;
+            }
+            @media screen and (max-width:1120px) {
+                grid-template-columns: repeat(2, 50%);
+                width: 100%;
+            }
+            @media screen and (max-width: 830px) {
+                grid-gap: 5px;
+            }
+            @media screen and (max-width: 745px) {
+                grid-gap: 0px;
+            }
+            @media screen and (max-width: 625px) {
+                grid-template-columns: 100%;
+            }
+
+            .dog1, .dog2, .dog3, .cat1, .cat2, .cat3 { 
+                width: 350px;
+                margin-bottom: 30px;
+
+                @media screen and (max-width:1120px) {
+                    margin: 30px auto;
+                }
+                @media screen and (max-width: 745px) {
+                    width: 300px;
+                }
+                @media screen and (max-width: 340px) {
+                    width: 250px;
+                }
+                @media screen and (max-width: 267px) {
+                    width: 200px;
+                }
+                
+
+                h3 {
+                    margin: 20px 0;
+                    letter-spacing: 1.5px;
+
+                    @media screen and (max-width:769px) {
+                        text-align: center;
+                    }
+                }
+                p {
+                    font-size: .9rem;
+                    line-height: 20px;
+
+                    @media screen and (max-width:769px) {
+                        width: 90%;
+                        margin: auto;
+                        text-align: center;
+                    }
+                    @media screen and (max-width: 267px) {
+                        width: 90%;
+                    }
+                }
+            }
+
+            .img-dog1 {
+                background: url(../../assets/img/new-pets-home/chien1.png);
+                width: 350px;
+                height: 450px;
+
+                @media screen and (max-width:769px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive1/chien1.png);
+                }
+                @media screen and (max-width: 340px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive2/chien1.png) right/cover;
+                }
+                
+            }
+            .img-dog2 {
+                background: url(../../assets/img/new-pets-home/chien2.png);
+                width: 350px;
+                height: 450px;
+
+                @media screen and (max-width:769px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive1/chien2.png);
+                }
+                @media screen and (max-width: 340px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive2/chien2.png) center/cover;
+                }
+            }
+            .img-dog3 {
+                background: url(../../assets/img/new-pets-home/chien3.png);
+                width: 350px;
+                height: 450px;
+
+                @media screen and (max-width:769px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive1/chien3.png);
+                }
+                @media screen and (max-width: 340px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive2/chien3.png) center/cover;
+                }
+            }
+            .img-cat1 {
+                background: url(../../assets/img/new-pets-home/chat1.png);
+                width: 350px;
+                height: 450px;
+
+                @media screen and (max-width:769px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive1/chat1.png);
+                }
+                @media screen and (max-width: 340px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive2/chat1.png) center/cover;
+                }
+            }
+            .img-cat2 {
+                background: url(../../assets/img/new-pets-home/chat2.png);
+                width: 350px;
+                height: 450px;
+
+                @media screen and (max-width:769px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive1/chat2.png);
+                }
+                @media screen and (max-width: 340px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive2/chat2.png) right/cover;
+                }
+            }
+            .img-cat3 {
+                background: url(../../assets/img/new-pets-home/chat3.png);
+                width: 350px;
+                height: 450px;
+
+                @media screen and (max-width:769px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive1/chat3.png);
+                }
+                @media screen and (max-width: 340px) {
+                    background: url(../../assets/img/new-pets-home/img-responsive2/chat3.png) center/cover;
+                }
+            }
+            .img-dog1, .img-dog2, .img-dog3, .img-cat1, .img-cat2, .img-cat3 {
+                @media screen and (max-width:769px) {
+                    width: 300px;
+                    height: 400px;
+                    margin: 0 auto;
+                }
+                @media screen and (max-width: 340px) {
+                    width: 250px;
+                    height: 350px;
+                }
+                @media screen and (max-width: 267px) {
+                    width: 200px;
+                }
+            }
+        }
+    }
+    button {
+        margin: 30px auto;
+
+        &:hover {
+            box-shadow: 4px 4px 2px rgba(251, 196, 205, 0.486);
+        }
+    }
+}

@@ -1,0 +1,88 @@
+.donuts {
+    .container {
+        @include center;
+        flex-direction: column;
+
+        h2 {
+            margin: 50px auto 0;
+            font-size: 2.5rem;
+            color: $color1;
+        }
+
+        .dog1 {
+            width: 60%;
+            margin: 30px auto 50px;
+
+            @media screen and (max-width: 700px) {
+                width: 80%;
+            }
+            @media screen and (max-width: 425px) {
+                width: 90%;
+            }
+            @media screen and (max-width: 380px) {
+                width: 100%;
+            }
+
+            .img-dog1 {
+                width: 400px;
+                height: 400px;
+                margin: 20px auto;
+                background: url(../../assets/img/dogs-page/chien1.png) center/cover;
+
+                @media screen and (max-width: 540px) {
+                    width: 350px;
+                }
+                @media screen and (max-width: 465px) {
+                    width: 320px;
+                }
+                @media screen and (max-width: 350px) {
+                    width: 250px;
+                    height: 150px;
+                    background: url(../../assets/img/dogs-individual/chien1-responsive.png) center/cover;
+                }
+                @media screen and (max-width: 275px) {
+                    width: 220px;
+                }
+            }
+            p {
+                text-align: justify;
+                margin: 30px auto;
+
+                @media screen and (max-width: 380px) {
+                    width: 90%;
+                    margin: auto;
+                }
+                @media screen and (max-width: 350px) {
+                    font-size: 0.9rem;
+                    width: 80%;
+                    margin: 20px auto;
+                }
+            }
+        }
+
+        .container-link {
+            width: 100%;
+            position: relative;
+
+            .container-next {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                margin: 0 20px 10px;
+
+                p {
+                    color: $color1;
+                    font-weight: bold;
+                    letter-spacing: 1.1px;
+                    font-size: 1.1rem;
+                    text-decoration: underline;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: $color2;
+                    }
+                }
+            }
+        }
+    }
+}

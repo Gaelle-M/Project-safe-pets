@@ -1,0 +1,89 @@
+.team {
+
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        margin: 50px auto;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        grid-gap: 50px;
+        margin: 30px 20px 50px;
+
+        @media screen and (max-width: 365px) {
+            margin: 0;
+            width: 100%;
+        }
+
+        .member1,
+        .member2,
+        .member3,
+        .member4,
+        .member5 {
+            width: 100%;
+
+            @media screen and (max-width: 365px) {
+                width: 80%;
+                margin: 0;
+            }
+            @media screen and (max-width: 260px) {
+                width: 70%;
+                margin: 0;
+            }
+
+            h4 {
+                margin: 25px 30px 10px;
+                font-size: 1.3rem;
+                color: $color1;
+
+                @media screen and (max-width: 365px) {
+                    text-align: center;
+                }
+            }
+            p {
+                margin: 0 30px 10px;
+                font-size: 0.9rem;
+                text-align: justify;
+                width: 80%;
+
+                @media screen and (max-width: 365px) {
+                    width: 95%;
+                    margin: 10px;
+                }
+            }
+        }
+        .img-1,
+        .img-2,
+        .img-3,
+        .img-4,
+        .img-5 {
+            width: 250px;
+            height: 250px;
+            margin: auto;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px #ff575786;
+
+            @media screen and (max-width: 365px) {
+                width: 200px;
+                height: 200px;
+            }
+        }
+
+        .img-1 {
+            background: url(../../assets/img/team/img-1.png) center/cover;
+        }
+        .img-2 {
+            background: url(../../assets/img/team/img-2.png) center/cover;
+        }
+        .img-3 {
+            background: url(../../assets/img/team/img-3.png) center/cover;
+        }
+        .img-4 {
+            background: url(../../assets/img/team/img-4.png) center/cover;
+        }
+        .img-5 {
+            background: url(../../assets/img/team/img-5.png) center/cover;
+        }
+    }
+}

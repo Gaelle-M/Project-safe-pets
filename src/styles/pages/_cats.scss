@@ -1,0 +1,80 @@
+.cats {
+    h2 {
+        text-align: center;
+        margin: 30px auto;
+        font-size: 2rem;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 50px;
+        margin-bottom: 40px;
+
+        @media screen and (max-width: 370px) {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cat1, .cat2, .cat3, .cat4, .cat5, .cat6 {
+            margin: 30px;
+
+            @media screen and (max-width: 370px) {
+                margin: 0 auto;
+                width: 80%;
+            }
+            @media screen and (max-width: 315px) {
+                width: 70%;
+            }
+            @media screen and (max-width: 275px) {
+                width: 65%;
+            }
+
+            p {
+                margin: 10px 0;
+                font-size: .9rem;
+
+                &:last-child {
+                    color: $black;
+                    text-decoration: underline;
+                    transition: .5s;
+
+                    &:hover {
+                        color: $color2;
+                    }
+                }
+            }
+            h3 {
+                letter-spacing: 1px;
+                color: $color1;
+            }
+        }
+
+        .img-cat1, .img-cat2, .img-cat3, .img-cat4, .img-cat5, .img-cat6 {
+            width: 100%;
+            height: 300px;
+        }
+        .img-cat1 {
+            background: url(../../assets/img/cats-page/chat1.png) center/cover;
+        }
+        .img-cat2 {
+            background: url(../../assets/img/cats-page/chat2.png) center/cover;
+        }
+        .img-cat3 {
+            background: url(../../assets/img/cats-page/chat3.png) center/cover;
+        }
+        .img-cat4 {
+            background: url(../../assets/img/cats-page/chat4.png) center/cover;
+        }
+        .img-cat5 {
+            background: url(../../assets/img/cats-page/chat5.png) center/cover;
+        }
+        .img-cat6 {
+            background: url(../../assets/img/cats-page/chat6.png) center/cover;
+        }
+    }
+    .container-btn {
+        @include center;
+        margin: 20px auto 40px;
+    }
+}

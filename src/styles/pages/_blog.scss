@@ -1,0 +1,98 @@
+.blog {
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        text-align: center;
+        margin: 30px auto;
+        font-size: 2rem;
+    }
+    p {
+        width: 90%;
+        margin: 15px auto;
+        text-align: justify;
+        font-size: 0.9rem;
+        line-height: 20px;
+
+        &:nth-child(7) {
+            margin: 30px auto 50px;
+        }
+    }
+
+    .container {
+        @include center;
+        background: url(../../assets/img/bg-black.png);
+        margin: 23px 0;
+
+        @media screen and (max-width:769px) {
+            flex-direction: column;
+        }
+        
+
+        .section1 {
+            box-shadow: -3px 5px 5px rgba(255, 192, 203, 0.231);
+
+            @media screen and (max-width: 400px) {
+                box-shadow: none;
+            }
+        }
+        .section2 {
+            box-shadow: 3px 5px 5px rgba(255, 192, 203, 0.231);
+
+            @media screen and (max-width: 400px) {
+                box-shadow: none;
+            }
+        }
+        .section1, .section2 {
+            width: 350px;
+            margin: 20px 30px;
+
+            @media screen and (max-width: 400px) {
+                width: 100%;
+            }
+
+            h3 {
+                color: $white;
+                text-align: center;
+                margin: 30px auto;
+                font-size: 1.3rem;
+                letter-spacing: 1px;
+                transition: .8s;
+
+                @media screen and (max-width: 400px) {
+                    font-size: 1rem;
+                }
+
+                &:hover {
+                    color: $color2;
+                    opacity: .8;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .img-cat {
+            background: url(../../assets/img/bg-home-chat.png);
+            height: 350px;
+
+            @media screen and (max-width: 400px) {
+                width: 200px;
+                height: 210px;
+                border-radius: 50%;
+                margin: auto;
+                background: url(../../assets/img/blog-responsive/blog-responvice-cat.png);
+            }
+        }
+        .img-dog {
+            background: url(../../assets/img/bg-home-chien.png);
+            height: 350px;
+
+            @media screen and (max-width: 400px) {
+                width: 200px;
+                height: 210px;
+                border-radius: 50%;
+                margin: auto;
+                background: url(../../assets/img/blog-responsive/blog-responsive-dog.png) /cover;
+            }
+        }
+    }
+}

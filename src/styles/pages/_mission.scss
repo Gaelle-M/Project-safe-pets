@@ -1,0 +1,46 @@
+.mission {
+    .container {
+        display: flex;
+
+        @media screen and (max-width: 769px) {
+            flex-direction: column;
+        }
+
+        .left-part {
+            width: 40%;
+
+            @media screen and (max-width: 769px) {
+                width: 100%;
+                height: 300px;
+            }
+
+            h2 {
+                text-align: center;
+                font-size: 2rem;
+                margin: 30px auto;
+            }
+            .img-bg {
+                background: url(../../assets/img/mission/mission.png);
+                height: 400px;
+
+                @media screen and (max-width: 769px) {
+                    background: url(../../assets/img/mission/mission-responsive.png);
+                    height: 200px;
+                }
+            }
+        }
+        .right-part {
+            width: 60%;
+
+            @media screen and (max-width: 769px) {
+                width: 100%;
+            }
+
+            p {
+                margin: 30px 10px;
+                text-align: justify;
+                font-size: 0.9rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@font-face {
+    font-family: "font1";
+    src: url(../assets/fonts/Roboto-Regular.ttf);
+}
+
+$font1: "font1", sans-serif;
+$white: rgb(245, 240, 240);
+$black: rgb(40, 39, 39);
+$color1: #ff5757;
+$color2: #c79288;
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+body {
+    background: $white;
+    color: $black;
+    font-family: $font1;
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    width: 200px;
+    height: 50px;
+    border: none;
+    background: $color1;
+    box-shadow: 1px 2px 2px $color2;
+    border-radius: 5px;
+    cursor: pointer;
+    color: $white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.8s;
+
+    &:hover {
+        color: $color2;
+        box-shadow: 4px 4px 2px $color2;
+    }
+}
